@@ -281,8 +281,5 @@ python scripts/gerar_dados.py --semente 7           # outra amostra
 Material da disciplina de **Análise e Visualização de Dados** — Eronides F. da
 Silva Neto (<efsn@cesar.school>), CESAR School.
 
-Estrutura e formato inspirados em
-[Elements of fMRI Tutorials](https://github.com/torwager/elements-of-fmri-tutorials),
-de Tor D. Wager e Martin A. Lindquist.
 
 Referência técnica: [Streamlit API reference](https://docs.streamlit.io/develop/api-reference).
