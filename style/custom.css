@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Dashboards com Streamlit — estilo customizado do livro (MyST book-theme)
+   Paleta baseada na identidade do Streamlit (#FF4B4B) com apoio em azul.
+   ========================================================================== */
+
+:root {
+  --st-red: #ff4b4b;
+  --st-red-dark: #c53030;
+  --st-red-soft: #fff1f1;
+  --st-blue: #1c6fd6;
+  --st-blue-soft: #eef5ff;
+  --st-ink: #26272b;
+  --st-muted: #5d6169;
+  --st-border: #e3e5e9;
+}
+
+/* ---------- 1. Faixa "Rode este código" no topo do capítulo ---------- */
+.run-quick {
+  background: var(--st-red-soft);
+  border: 1px solid #ffd0d0;
+  border-left: 4px solid var(--st-red);
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin: 1.2rem 0 1.6rem;
+  font-size: 0.94rem;
+}
+.run-quick a {
+  font-weight: 600;
+}
+
+/* ---------- 2. Cartão de referência da API ---------- */
+.api-ref {
+  background: var(--st-blue-soft);
+  border: 1px solid #cfe0f7;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 1.2rem 0;
+  font-size: 0.92rem;
+}
+.api-ref code {
+  background: #fff;
+  border: 1px solid #cfe0f7;
+}
+
+/* ---------- 3. Blocos de "assinatura" de função ---------- */
+.signature {
+  background: #f7f8fa;
+  border: 1px solid var(--st-border);
+  border-left: 4px solid var(--st-blue);
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  margin: 1rem 0;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.88rem;
+  overflow-x: auto;
+}
+
+/* ---------- 4. Legenda de figura / captura de tela do app ---------- */
+.app-shot img {
+  border: 1px solid var(--st-border);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 8%);
+}
+
+/* ---------- 5. Rodapé de navegação do capítulo ---------- */
+.chapter-footer {
+  border-top: 1px solid var(--st-border);
+  margin-top: 2.5rem;
+  padding-top: 0.9rem;
+  font-size: 0.88rem;
+  color: var(--st-muted);
+}
+
+/* ---------- 6. Tabelas de referência (cheat sheets) ---------- */
+table code {
+  white-space: nowrap;
+  font-size: 0.85em;
+}
+
+/* ---------- 7. Ajustes de leitura ---------- */
+.dropdown summary {
+  font-weight: 500;
+}
+
+/* Modo escuro: suaviza os fundos claros dos cartões */
+@media (prefers-color-scheme: dark) {
+  .run-quick {
+    background: rgb(255 75 75 / 12%);
+    border-color: rgb(255 75 75 / 35%);
+  }
+  .api-ref {
+    background: rgb(28 111 214 / 12%);
+    border-color: rgb(28 111 214 / 35%);
+  }
+  .api-ref code {
+    background: transparent;
+    border-color: rgb(28 111 214 / 35%);
+  }
+  .signature {
+    background: rgb(255 255 255 / 4%);
+    border-color: rgb(255 255 255 / 12%);
+  }
+}

@@ -1,0 +1,67 @@
+# Documentação: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: streamlit-dashboards-tutorials
+  title: Dashboards com Streamlit — Tutoriais Interativos
+  description: Guia prático das principais funções do Streamlit para construção de dashboards de dados, produzido para a disciplina de Análise e Visualização de Dados (CESAR School).
+  keywords:
+    [
+      streamlit,
+      dashboards,
+      python,
+      plotly,
+      visualização de dados,
+      análise de dados,
+      data apps,
+    ]
+  authors:
+    - name: Eronides F. da Silva Neto
+      email: efsn@cesar.school
+      affiliation: CESAR School
+  github: https://github.com/SEU-USUARIO/streamlit-gitbook
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  toc:
+    - file: intro.md
+    - file: como-usar.md
+    - file: setup.md
+    - file: conteudo.md
+    - title: "Parte 1 · Motivação e Ambiente"
+      children:
+        - file: part1/ch01-por-que-streamlit.md
+        - file: part1/ch02-instalacao-e-ambientes.md
+        - file: part1/ch03-primeiro-app-modelo-de-execucao.md
+    - title: "Parte 2 · Elementos de Texto"
+      children:
+        - file: part2/ch04-write-e-magic.md
+        - file: part2/ch05-titulos-markdown-e-status.md
+    - title: "Parte 3 · Dados e Gráficos"
+      children:
+        - file: part3/ch06-plotly-express.md
+        - file: part3/ch07-exibindo-dados.md
+        - file: part3/ch08-funcoes-graficas-e-midia.md
+    - title: "Parte 4 · Interatividade"
+      children:
+        - file: part4/ch09-widgets-de-input.md
+        - file: part4/ch10-session-state-e-rerun.md
+        - file: part4/ch11-cache-e-performance.md
+    - title: "Parte 5 · Layout e Estrutura"
+      children:
+        - file: part5/ch12-layouts-e-containers.md
+        - file: part5/ch13-multipage-e-navegacao.md
+        - file: part5/ch14-temas-e-componentes.md
+    - title: "Parte 6 · Construindo o Dashboard"
+      children:
+        - file: part6/ch15-roteiro-de-dashboard.md
+        - file: part6/ch16-projeto-guiado.md
+    - title: "Parte 7 · Publicação e Recursos"
+      children:
+        - file: part7/ch17-deploy.md
+        - file: part7/ch18-templates-e-galeria.md
+site:
+  template: book-theme
+  options:
+    logo_text: Dashboards com Streamlit
+    style: ./style/custom.css
+    folders: true

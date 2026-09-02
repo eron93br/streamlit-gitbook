@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboards com Streamlit — Tutoriais Interativos</title>
+    <meta
+      name="description"
+      content="Guia prático das principais funções do Streamlit para construção de dashboards de dados — disciplina de Análise e Visualização de Dados, CESAR School."
+    />
+    <style>
+      :root {
+        --red: #ff4b4b;
+        --ink: #1f2126;
+        --muted: #5d6169;
+        --border: #e3e5e9;
+        --bg: #ffffff;
+        --card: #fafbfc;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #edeef1;
+          --muted: #a3a8b2;
+          --border: #2c2f36;
+          --bg: #17181c;
+          --card: #1f2126;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 3.5rem 1.25rem 4rem;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--red);
+        margin: 0 0 0.6rem;
+      }
+      h1 {
+        font-size: clamp(2rem, 5vw, 2.9rem);
+        line-height: 1.12;
+        margin: 0 0 0.8rem;
+        letter-spacing: -0.02em;
+      }
+      .lede {
+        font-size: 1.12rem;
+        color: var(--muted);
+        max-width: 62ch;
+        margin: 0 0 2rem;
+      }
+      .cta {
+        display: inline-block;
+        background: var(--red);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.75rem 1.4rem;
+        border-radius: 8px;
+        margin: 0 0.6rem 0.6rem 0;
+      }
+      .cta.secondary {
+        background: transparent;
+        color: var(--ink);
+        border: 1px solid var(--border);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+        margin: 3rem 0 0;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.1rem 1.2rem;
+      }
+      .card h3 {
+        margin: 0 0 0.35rem;
+        font-size: 1rem;
+      }
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .card .n {
+        color: var(--red);
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+      }
+      code {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 0.1em 0.4em;
+        font-size: 0.9em;
+      }
+      footer {
+        margin-top: 3.5rem;
+        padding-top: 1.2rem;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+      a {
+        color: var(--red);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <p class="eyebrow">Análise e Visualização de Dados · CESAR School</p>
+      <h1>Dashboards com Streamlit</h1>
+      <p class="lede">
+        Um livro-tutorial em 18 capítulos sobre as principais funções do
+        Streamlit — do <code>pip install</code> ao dashboard publicado. Cada
+        capítulo traz explicação, código copiável, um app executável, questões
+        para reflexão e um quiz de autoavaliação.
+      </p>
+
+      <a class="cta" href="./book/">Começar a ler →</a>
+      <a class="cta secondary" href="./book/conteudo.html">Índice completo</a>
+
+      <div class="grid">
+        <div class="card">
+          <span class="n">PARTE 1</span>
+          <h3>Motivação e Ambiente</h3>
+          <p>Por que Streamlit, instalação, virtualenvs e o modelo de execução.</p>
+        </div>
+        <div class="card">
+          <span class="n">PARTE 2</span>
+          <h3>Elementos de Texto</h3>
+          <p><code>st.write</code>, magic commands, títulos, markdown e mensagens de status.</p>
+        </div>
+        <div class="card">
+          <span class="n">PARTE 3</span>
+          <h3>Dados e Gráficos</h3>
+          <p>Plotly Express, <code>st.dataframe</code>, <code>st.metric</code>, <code>st.plotly_chart</code> e mídia.</p>
+        </div>
+        <div class="card">
+          <span class="n">PARTE 4</span>
+          <h3>Interatividade</h3>
+          <p>Widgets de input, <code>st.session_state</code>, reruns e cache.</p>
+        </div>
+        <div class="card">
+          <span class="n">PARTE 5</span>
+          <h3>Layout e Estrutura</h3>
+          <p>Colunas, abas, sidebar, apps multipágina, temas e componentes.</p>
+        </div>
+        <div class="card">
+          <span class="n">PARTE 6 e 7</span>
+          <h3>Projeto e Publicação</h3>
+          <p>Roteiro de construção, dashboard completo, deploy e galeria de exemplos.</p>
+        </div>
+      </div>
+
+      <footer>
+        Conteúdo sob licença
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> ·
+        código sob licença MIT. Material da disciplina de Análise e Visualização
+        de Dados — Eronides F. da Silva Neto
+        (<a href="mailto:efsn@cesar.school">efsn@cesar.school</a>).
+      </footer>
+    </main>
+  </body>
+</html>
